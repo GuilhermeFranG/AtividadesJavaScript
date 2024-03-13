@@ -1,0 +1,67 @@
+1. Variáveis e Saída de Dados:
+- Declare uma variável utilizando a palavra-chave `let` e atribua
+seu nome como valor.
+- Use `console.log()` para imprimir uma mensagem de
+boas-vindas concatenando seu nome.
+
+
+2. Operações Matemáticas:
+- Declare duas variáveis numéricas utilizando `let`.
+- Realize operações de adição, subtração, multiplicação e divisão
+entre essas variáveis usando os operadores `+`, `-`, `*` e `/`.
+- Utilize `console.log()` para imprimir os resultados.
+
+
+3. Condicionais:
+- Declare uma variável numérica utilizando `let`.
+- Use um condicional `if` para verificar se o número é par ou
+ímpar usando o operador `%`.
+- Imprima uma mensagem correspondente usando
+`console.log()`.
+
+
+4. Loops:
+- Use um loop `for` para iterar de 1 a 10.
+- Dentro do loop, utilize `console.log()` para imprimir cada
+número.
+
+
+5. Funções:
+- Declare uma função utilizando a palavra-chave `function` e dê
+um nome significativo a ela.
+- Defina parâmetros para a função para receber os números que
+serão somados.
+- Dentro da função, some os dois números utilizando o operador
+`+` e retorne o resultado.
+- Fora da função, chame-a com diferentes valores como
+argumentos e imprima o resultado.
+
+
+6. Métodos de String:
+- Declare uma variável com uma frase como uma string.
+- Use o método `toUpperCase()` para converter a frase para letras
+maiúsculas.
+- Imprima a frase modificada usando `console.log()`.
+
+
+7. Objetos:
+- Declare um objeto utilizando `let` e atribua a ele propriedades
+como modelo, cor e ano de um carro.
+- Acesse essas propriedades usando a notação de ponto (`.`) e
+imprima cada uma delas usando `console.log()`.
+
+
+8. Manipulação de DOM:
+- Utilize `document.getElementById()` para selecionar um
+elemento HTML com um `id` específico.
+- Use `.textContent` para alterar o texto desse elemento.
+
+
+9. Manipulação de Eventos:
+- No arquivo HTML, crie um botão com um `id` específico.
+- No arquivo JavaScript, utilize `document.getElementById()`
+para selecionar o botão.
+- Use `.addEventListener()` para adicionar um evento de clique
+ao botão.
+- Dentro do manipulador de evento, utilize `alert()` ou
+`console.log()` para exibir uma mensagem.
