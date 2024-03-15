@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis e Saída de Dados</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(131, 224, 255);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            background-color: #225;
+            color: whitesmoke;
+            font-weight: bold;
+            margin-bottom: 10vh;
+            transition: opacity ease 0.2s;
+        }
+
+        button:hover {
+            cursor: pointer;
+            opacity: 0.90;
+        }
+
+        p {
+            font-size: large;
+            margin: 20px;
+            color: black;
+            text-shadow: 0px 0px 10px lightgrey;
+        }
+
+        footer {
+            padding: 2vh 0 2vh;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: rgb(216, 245, 255);
+            text-align: center;
+            text-shadow: 1px 2px 2px darkblue;
+            font-weight: bolder;
+            font-size: small;
+            background-image: linear-gradient(to right, #225f96, #0088ff, #225f96);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <button onclick="showInfo()" id="click">clique aqui</button>
+        <p id="info"></p>
+        <p id="content"></p>
+    </main>
+
+    <footer>
+        Variáveis e Dados 2024, <a href="https://github.com/GuilhermeFranG">Gui_FranG</a>
+    </footer>
+
+</body>
+
+<script>
+    let isClicked = false
+
+    function showInfo() {
+        let nome = "Guilherme Francisco Guth";
+        let idade = 17;
+        let instituto = "Instituto Evoluir";
+        let code = "Html, Css e JavaScript";
+
+        const body = document.body;
+        var info = document.getElementById("info");
+        var content = document.getElementById('content');
+
+        if (!isClicked) {
+            info.innerHTML = "Olá, meu nome é " + nome + "  e tenho " + idade +
+                " anos de idade.";
+            info.style.display = "block";
+            content.innerHTML = "Estou estudando programação com o " + instituto + ", e atualmente estudo as linguagens "
+                + code + ".";
+            content.style.display = "block";
+            body.style.backgroundColor = '#33337e';
+        } else {
+            info.style.display = "none";
+            content.style.display = "none";
+            body.style.backgroundColor = '';
+        }
+
+        isClicked = !isClicked;
+    }
+</script>
+
+</html>
