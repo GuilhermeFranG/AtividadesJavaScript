@@ -1,18 +1,18 @@
-1. Variáveis e Saída de Dados:
+1. Variáveis e Saída de Dados:  /
 - Declare uma variável utilizando a palavra-chave `let` e atribua
 seu nome como valor.
 - Use `console.log()` para imprimir uma mensagem de
 boas-vindas concatenando seu nome.
 
 
-2. Operações Matemáticas:
+2. Operações Matemáticas:  /
 - Declare duas variáveis numéricas utilizando `let`.
 - Realize operações de adição, subtração, multiplicação e divisão
 entre essas variáveis usando os operadores `+`, `-`, `*` e `/`.
 - Utilize `console.log()` para imprimir os resultados.
 
 
-3. Condicionais:
+3. Condicionais:  /
 - Declare uma variável numérica utilizando `let`.
 - Use um condicional `if` para verificar se o número é par ou
 ímpar usando o operador `%`.
