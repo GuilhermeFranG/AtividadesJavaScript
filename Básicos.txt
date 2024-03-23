@@ -20,7 +20,7 @@ entre essas variáveis usando os operadores `+`, `-`, `*` e `/`.
 `console.log()`.
 
 
-4. Loops:
+4. Loops:  /
 - Use um loop `for` para iterar de 1 a 10.
 - Dentro do loop, utilize `console.log()` para imprimir cada
 número.
