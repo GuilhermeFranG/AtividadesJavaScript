@@ -26,7 +26,7 @@ entre essas variáveis usando os operadores `+`, `-`, `*` e `/`.
 número.
 
 
-5. Funções:
+5. Funções:  /
 - Declare uma função utilizando a palavra-chave `function` e dê
 um nome significativo a ela.
 - Defina parâmetros para a função para receber os números que
@@ -37,7 +37,7 @@ serão somados.
 argumentos e imprima o resultado.
 
 
-6. Métodos de String:
+6. Métodos de String:  /
 - Declare uma variável com uma frase como uma string.
 - Use o método `toUpperCase()` para converter a frase para letras
 maiúsculas.
