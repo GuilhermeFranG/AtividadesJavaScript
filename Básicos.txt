@@ -44,7 +44,7 @@ maiúsculas.
 - Imprima a frase modificada usando `console.log()`.
 
 
-7. Objetos:
+7. Objetos:  /
 - Declare um objeto utilizando `let` e atribua a ele propriedades
 como modelo, cor e ano de um carro.
 - Acesse essas propriedades usando a notação de ponto (`.`) e
