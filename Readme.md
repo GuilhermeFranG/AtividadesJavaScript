@@ -3,7 +3,7 @@
 Esse repositório foi feito para a realização de Atividades de fixação, envolvendo **JavaScript**.  
 
 
-## **`Básicas:`**
+## [**`Básicas:`**](https://github.com/GuilhermeFranG/AtividadesJavaScript/blob/main/Atividades%20JS%20-%20B%C3%A1sicas/B%C3%A1sicos.txt)
 
 
 ### [Atividade 1: Variáveis e Saída de Dados](https://github.com/GuilhermeFranG/AtividadesJavaScript/blob/main/Atividade-1_Vari%C3%A1veisSa%C3%ADdadeDados.html)
@@ -17,7 +17,7 @@ Esse repositório foi feito para a realização de Atividades de fixação, envo
 ### Atividade 9: Manipulação de Eventos
 
 
-## **`Fixação:`**
+## [**`Fixação:`**](https://github.com/GuilhermeFranG/AtividadesJavaScript/blob/main/Atividades%20JS%20-%20Fixa%C3%A7%C3%A3o/Fixa%C3%A7%C3%A3o.txt)
 
 
 ### Atividade 1: Calculadora de IMC
