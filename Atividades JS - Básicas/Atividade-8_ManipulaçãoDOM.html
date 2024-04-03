@@ -13,6 +13,8 @@
             box-sizing: border-box;
         }
 
+        a {text-decoration: none;}
+
         body {
             display: flex;
             flex-direction: column;
@@ -23,7 +25,7 @@
         }
 
         header {
-            margin-top: 100px;
+            margin-top: 80px;
         }
 
         h1 {
@@ -46,6 +48,22 @@
 
         .hidden {
             display: none;
+        }
+
+        footer {
+            margin: 11vh 0 0 0;
+            color: whitesmoke;
+            font-weight: bolder;
+            padding: 2vh 0 2vh;
+            position: relative;
+            text-align: center;
+            bottom: 0;
+            background-image: linear-gradient(to left, black 20%, grey, black 80%);
+            width: 100%;
+        }
+        footer a {
+            color: whitesmoke;
+            text-shadow: 1px 0px 2px blue;
         }
     </style>
 </head>
@@ -71,6 +89,10 @@
         </div>
     </main>
 
+    <footer id="footer">
+        <p>Eventos 2024, <a href="https://github.com/GuilhermeFranG">Gui_FranG</a></p>
+    </footer>
+
 </body>
 
 <script>
@@ -79,6 +101,7 @@
     const shyEmoji = document.getElementById("shyEmoji");
     const noBtn = document.getElementById("noBtn");
     var headText = document.getElementById("headerText");
+    var footer = document.getElementById("footer");
 
     function showText() {
         var buttons = document.querySelectorAll(".buttons");
@@ -128,6 +151,9 @@
         buttons.forEach(button => {
             noBtn.classList.add(["hidden"]);
             headText.innerHTML = "☠";
+            footer.classList.add(["hidden"]);
+            textBtn.classList.add(["hidden"]);
+            imgBtn.classList.add(["hidden"]);
         })
         isClicked = !isClicked;
     }

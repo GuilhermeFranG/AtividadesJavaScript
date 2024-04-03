@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNJD7lmEDz0qwqS1XB2dVxkfZjxHEf28IWItxoUEt_ng&s"
+        type="image/x-icon">
+    <title>Eventos</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: lightblue;
+        }
+
+        header {
+            margin-top: 80px;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: blue;
+            text-shadow: 1px 3px 3px lightskyblue;
+        }
+
+        main {
+            text-align: center;
+            margin: 40px;
+        }
+
+        button {
+            width: 13vw;
+            padding: 10px;
+            margin: 30px;
+            cursor: pointer;
+            transition: 0.2s linear;
+            border-radius: 10px;
+            background-color: aquamarine;
+            border: 2px solid lightskyblue;
+        }
+
+        footer {
+            color: whitesmoke;
+            font-weight: bolder;
+            padding: 2vh 0 2vh;
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+            background-image: linear-gradient(to left, black 20%, grey, black 80%);
+            width: 100%;
+        }
+
+        footer a {
+            color: whitesmoke;
+            text-shadow: 1px 0px 2px blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Clique nos Botões</h2>
+    </header>
+
+    <main>
+        <div>
+            <button id="textBtn">Mostrar Texto</button>
+            <p id="message"></p>
+        </div>
+        <div>
+            <button id="alertBtn">Mostrar Alerta</button>
+        </div>
+        <div>
+            <button id="consoleBtn">Estatísticas para nerds</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Eventos 2024, <a href="https://github.com/GuilhermeFranG">Gui_FranG</a></p>
+    </footer>
+</body>
+
+<script>
+    const textBtn = document.getElementById('textBtn');
+    const alertBtn = document.getElementById('alertBtn');
+    const consoleBtn = document.getElementById('consoleBtn');
+
+    textBtn.addEventListener('click', showText);
+    alertBtn.addEventListener('click', showAlert);
+    consoleBtn.addEventListener('click', showConsole);
+
+    function showText() {
+        let message = document.getElementById('message');
+        if (message.style.display === 'none') {
+            message.innerHTML = "Olá, mundo!";
+            message.style.fontWeight = 'bold';
+            message.style.display = 'block';
+            textBtn.style.width = '40px';
+            textBtn.style.fontWeight = 'bold';
+            textBtn.style.fontSize = '15px';
+            textBtn.innerHTML = '^'
+            textBtn.style.border = '3px solid blue';
+        } else {
+            message.style.display = 'none';
+            textBtn.style.width = '';
+            textBtn.innerHTML = 'Mostrar Texto';
+            textBtn.style.fontWeight = '';
+            textBtn.style.fontSize = '';
+            textBtn.style.border = '';
+        };
+    }
+
+    function showAlert() {
+        alert(`
+Olá, Mundo! 
+Seja bem vindo ao universo da programação!
+Onde você pode aprender como montar os mais elaborados programas e sites como esse! 🤚😊🤚
+(Não é tão elaborado assim...)
+                                                                    - Gui_FranG, 2024`);
+    }
+
+    function showConsole() {
+        consoleBtn.innerHTML = "F12";
+        console.log(`
+KKKKKKKK Você é um nerd KKKKKKK...
+Brincadeira...eu também sou um nerd ☝🤓.
+Mas é...esse botão apenas cria uma mensagem no console...
+Parabéns por achar!`);
+    }
+
+</script>
+
+</html>

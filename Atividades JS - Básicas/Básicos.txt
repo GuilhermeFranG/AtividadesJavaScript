@@ -57,7 +57,7 @@ elemento HTML com um `id` específico.
 - Use `.textContent` para alterar o texto desse elemento.
 
 
-9. Manipulação de Eventos:
+9. Manipulação de Eventos:  /
 - No arquivo HTML, crie um botão com um `id` específico.
 - No arquivo JavaScript, utilize `document.getElementById()`
 para selecionar o botão.
