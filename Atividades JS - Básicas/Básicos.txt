@@ -51,7 +51,7 @@ como modelo, cor e ano de um carro.
 imprima cada uma delas usando `console.log()`.
 
 
-8. Manipulação de DOM:
+8. Manipulação de DOM:  /
 - Utilize `document.getElementById()` para selecionar um
 elemento HTML com um `id` específico.
 - Use `.textContent` para alterar o texto desse elemento.
