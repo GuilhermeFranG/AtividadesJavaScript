@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="At_2.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3884/3884483.png" type="image/x-icon" />
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+
+    <main>
+        <div>
+            <form>
+                <input type="number" id="num1" name="num1" value="0" />
+                <input type="number" id="num2" name="num2" value="0" /> <br>
+                <input type="number" id="num3" class="hidden" name="num3" value="0" />
+                <input type="number" id="num4" class="hidden" name="num4" value="0" /> <br>
+                <input type="number" id="num5" class="hidden2" name="num5" value="0" />
+                <input type="number" id="num6" class="hidden2" name="num6" value="0" />
+                <button type="reset">Limpar</button>
+            </form>
+        </div>
+
+        <p id="result"></p>
+
+        <div>
+            <button class="operator" onclick="plus()">Somar</button>
+            <button class="operator" onclick="minus()">Subtrair</button>
+            <button class="operator" onclick="times()">Multiplicar</button>
+            <button class="operator" onclick="divide()">Dividir</button> <br>
+            <button id="advanced" onclick="openAdvanced()">Avançado</button>
+            <button id="showMore" onclick="showMore()">Cálculo Múltiplo</button>
+            <button id="evenMore" class="hidden" onclick="showMoreAgain()">Mais</button>
+            <button class="hidden3" onclick="squared()">X<sup>2</sup></button>
+            <button class="hidden3" onclick="cubed()">X<sup>3</sup></button>
+            <button id="power" class="hidden3" onclick="potentiation()">X<sup>x</sup>
+                <input type="number" name="raised" id="raised" />
+            </button>
+            <button id="sqRoot" class="hidden3" onclick="squareRoot()">&radic;</button>
+            <button id="rootX" class="hidden3" onclick="rootX()"><sup>x</sup>&radic;
+                <input type="number" name="root" id="root" />
+            </button>
+        </div>
+    </main>
+
+
+</body>
+
+<script src="AT2.js"></script>
+
+</html>
