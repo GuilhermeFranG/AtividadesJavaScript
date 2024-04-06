@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AtI_1.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/649/649605.png" type="image/x-icon">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Calcule seu Indíce de Massa Corporal <b>(IMC)</b></h1>
+    </header>
+
+    <main>
+        <div>
+            <label for="peso">Peso (Kg)</label>
+            <input type="number" name="peso" id="peso" value="0" />
+            <label for="altura">Altura (m)</label>
+            <input type="number" name="altura" id="altura" value="0" />
+        </div>
+        <p id="result"></p>
+        <div>
+            <button id="calcular" onclick="imc()">Calcular</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Eventos 2024, <a href="https://github.com/GuilhermeFranG">Gui_FranG</a></p>
+    </footer>
+
+</body>
+
+<script src="ATInt1.js"></script>
+
+</html>
