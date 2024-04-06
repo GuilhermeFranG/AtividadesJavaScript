@@ -3,7 +3,7 @@
 Esse repositório foi feito para a realização de Atividades de fixação, envolvendo **JavaScript**.  
 
 
-## [**`Básicas:`**](https://github.com/GuilhermeFranG/AtividadesJavaScript/blob/main/Atividades%20JS%20-%20B%C3%A1sicas/B%C3%A1sicos.txt)
+## [**`Básico:`**](https://github.com/GuilhermeFranG/AtividadesJavaScript/blob/main/Atividades%20JS%20-%20B%C3%A1sicas/B%C3%A1sicos.txt)
 
 
 ### [Atividade 1: Variáveis e Saída de Dados](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atividades%20JS%20-%20B%C3%A1sicas/Atividade%201)
@@ -17,10 +17,10 @@ Esse repositório foi feito para a realização de Atividades de fixação, envo
 ### [Atividade 9: Manipulação de Eventos](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atividades%20JS%20-%20B%C3%A1sicas/Atividade%209)
 
 
-## [**`Intermediário:`**](https://github.com/GuilhermeFranG/AtividadesJavaScript/blob/main/Atividades%20JS%20-%20Fixa%C3%A7%C3%A3o/Fixa%C3%A7%C3%A3o.txt)
+## [**`Intermediário:`**](https://github.com/GuilhermeFranG/AtividadesJavaScript/blob/main/Atividades%20JS%20-%20Intermedi%C3%A1rio/Intermedi%C3%A1rio.txt)
 
 
-### Atividade 1: Calculadora de IMC
+### [Atividade 1: Calculadora de IMC](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atividades%20JS%20-%20Intermedi%C3%A1rio/Atividade%201)
 ### Atividade 2: Contador de Palavras
 ### Atividade 3: Relógio Digital
 ### Atividade 4: Calculadora de Média
