@@ -30,4 +30,4 @@ if (randomWith0 % 2 !== 0) {
 
 console.log(randomWith0);
 console.log(indexOf0);
-console.log(sliceOf0);
+console.log(sliceOf0); 
