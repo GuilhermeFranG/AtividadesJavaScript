@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="At_8.css">
+    <link rel="shortcut icon" href="https://media.tenor.com/tFsfKzhkuU0AAAAj/blink-blinking.gif" type="image/x-icon">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="headerText">Clique no botões</h1>
+    </header>
+
+    <main>
+        <div>
+            <button id="textBtn" class="buttons" onclick="showText()">Mostrar Texto</button>
+        </div>
+        <div>
+            <button id="imgBtn" class="buttons" onclick="showImg()">Mostra Imagem</button> </br>
+            <img src="https://media.tenor.com/tFsfKzhkuU0AAAAj/blink-blinking.gif" alt="shy" id="shyEmoji"
+                class="hidden" />
+        </div>
+
+        <div>
+            <button id="noBtn" class="buttons" onclick="showNoMore()"><strong>Não clique aqui!</strong></button>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p>Eventos 2024, <a href="https://github.com/GuilhermeFranG">Gui_FranG</a></p>
+    </footer>
+
+</body>
+
+<script src="AT8.js"></script>
+
+</html>
