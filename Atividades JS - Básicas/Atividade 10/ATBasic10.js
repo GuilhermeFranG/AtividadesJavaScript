@@ -32,7 +32,7 @@ ${temp2} ${c}`);
         conversor.innerHTML = `<strong>Conversão:</strong> (${temp1} °F - 32) *  5 / 9 = ${temp2} °C`;
     } else if (select1.value === "Celsius" && select2.value === "Kelvin") {
         let temp1 = document.getElementById("temp1").value;
-        let temp2 = document.getElementById("temp2").value = ((temp1 * 1 / 1) + 273.15).toFixed(2);
+        let temp2 = document.getElementById("temp2").value = ((temp1 * 1) + 273.15).toFixed(2);
         console.log(`${temp1} ${c}  
 ${temp2} ${k}`);
         console.log(`Conversão: °C + 273,15`);
@@ -72,6 +72,9 @@ function changeTheme() {
         document.body.style.backgroundColor = "#000";
         document.body.style.color = "#fff";
     } else {
+        theme.style.backgroundColor = "#fff";
+        theme.style.color = "#000";
+        theme.style.border = "1px solid #000"
         document.body.style.backgroundColor = "#fff";
         document.body.style.color = "#000";
     }
