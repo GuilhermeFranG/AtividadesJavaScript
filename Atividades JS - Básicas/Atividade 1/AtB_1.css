@@ -9,6 +9,11 @@ a {
     color: rgb(131, 224, 255);
 }
 
+body {font-family: Arial, Helvetica, sans-serif;  background-color: #769;}
+
+
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -38,18 +43,24 @@ p {
     font-size: large;
     margin: 20px;
     color: black;
-    text-shadow: 0px 0px 10px lightgrey;
+    text-shadow: 3px 2px 6px #769;
 }
 
+
+
+
 footer {
-    padding: 2vh 0 2vh;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: rgb(216, 245, 255);
-    text-align: center;
-    text-shadow: 1px 2px 2px darkblue;
+    color: whitesmoke;
     font-weight: bolder;
-    font-size: small;
-    background-image: linear-gradient(to right, #225f96, #0088ff, #225f96);
+    font-size: 10px;
+    padding: 1vh 0 1vh;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    background-image: linear-gradient(to left, black 20%, grey, black 80%);
+    width: 100%;
+}
+footer a {
+    color: whitesmoke;
+    text-shadow: 1px 0px 4px blue;
 }

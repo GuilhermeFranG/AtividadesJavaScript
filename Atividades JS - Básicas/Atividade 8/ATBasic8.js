@@ -52,15 +52,16 @@ function showNoMore() {
 
     buttons.forEach(button => {
         noBtn.classList.add(["hidden"]);
-        headText.innerHTML = "☠";
+        headText.innerHTML = `☠ <br> VOCÊ FOI AVISADO`;
+        headText.style.fontSize ="100px";
+        headText.style.color = "#000";
+        headText.style.textAlign = "center";
         footer.classList.add(["hidden"]);
         textBtn.classList.add(["hidden"]);
         imgBtn.classList.add(["hidden"]);
         shyEmoji.classList.add(["hidden"]);
     })
-    isClicked = !isClicked;
 }
 
 let isChanged = false;
 let isShowed = false;
-let isClicked = false;

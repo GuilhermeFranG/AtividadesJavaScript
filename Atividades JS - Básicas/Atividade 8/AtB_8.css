@@ -44,19 +44,22 @@ button {
     display: none;
 }
 
+
+
+
 footer {
-    margin: 11vh 0 0 0;
+    margin: 85px 0 0 0;
     color: whitesmoke;
     font-weight: bolder;
-    padding: 2vh 0 2vh;
+    font-size: 12px;
+    padding: 1vh 0 1vh;
     position: relative;
     text-align: center;
     bottom: 0;
     background-image: linear-gradient(to left, black 20%, grey, black 80%);
     width: 100%;
 }
-
 footer a {
     color: whitesmoke;
-    text-shadow: 1px 0px 2px blue;
+    text-shadow: 1px 0px 4px blue;
 }

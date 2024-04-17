@@ -68,15 +68,17 @@ function changeTheme() {
     if (!isClicked) {
         theme.style.backgroundColor = "#000";
         theme.style.color = "#fff";
-        theme.style.border = "1px solid #fff"
+        theme.style.border = "1px solid #fff";
+        theme.innerHTML = "Tema &#9728;";
         document.body.style.backgroundColor = "#000";
         document.body.style.color = "#fff";
     } else {
-        theme.style.backgroundColor = "#fff";
-        theme.style.color = "#000";
-        theme.style.border = "1px solid #000"
-        document.body.style.backgroundColor = "#fff";
-        document.body.style.color = "#000";
+        theme.style.backgroundColor = "";
+        theme.style.color = "";
+        theme.style.border = "";
+        theme.innerHTML = "Tema &#9790;";
+        document.body.style.backgroundColor = "";
+        document.body.style.color = "";
     }
 
     isClicked = !isClicked;
