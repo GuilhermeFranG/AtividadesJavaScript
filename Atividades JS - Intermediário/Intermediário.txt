@@ -1,9 +1,9 @@
-1 - Calculadora de IMC
+1 - Calculadora de IMC  /
 Crie uma calculadora de Índice de Massa Corporal (IMC) que
 solicite ao usuário o peso e a altura, e mostre o IMC calculado.
 
 
-2 - Contador de Palavras
+2 - Contador de Palavras  /
 Desenvolva um contador de palavras que conte quantas palavras
 estão presentes em um texto digitado pelo usuário.
 
