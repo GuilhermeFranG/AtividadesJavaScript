@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="AtI_2.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/542/542632.png" type="image/x-icon">
+    <title>Contador de Palavras</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Escreva seu texto</h1>
+    </header>
+
+    <main>
+        <form name="wordCounter" action="#">
+            <textarea name="textArea" id="textArea" cols="80" rows="20" placeholder="Digite algo aqui..." onkeyup="contarPalavras()"></textarea>
+            <div id="btnContainer">
+                <button type="reset" class="textBtn">Limpar</button>
+            </div>
+        </form>
+
+        <p id="counter"></p>
+    </main>
+
+    <footer>
+        <p>Contador de Palavras 2024, <a href="https://github.com/GuilhermeFranG">Gui_FranG</a></p>
+    </footer>
+
+</body>
+
+<script src="ATInt2.js"></script>
+
+</html>
