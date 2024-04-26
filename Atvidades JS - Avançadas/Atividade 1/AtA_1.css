@@ -1,0 +1,118 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 20px 0 20px;
+    gap: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+header {
+    width: 100%;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 4px 3px #cecece;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+h1, #headerPgh {
+    color: #000;
+    text-shadow: 1px 1px 6px #ccc;
+    margin: 2vh 0 2vh;
+}
+
+
+
+
+main {
+    display: flex;
+    margin: 10px; 
+    gap: 3em;  
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+th {
+    background-color: #cececeb0;
+    width: 13vw;
+    text-shadow: 1px 1px 6px #ccc;
+}
+
+td {text-transform: capitalize; text-shadow: 2px 2px 2px #000;}
+.name {text-align: left;}
+
+.aprovado {
+    background-image: linear-gradient(to top, yellowgreen, green 50%);
+    color: #fff;
+    font-weight: bolder;
+}
+
+.reprovado {
+    background-image: linear-gradient(to top, red , #b41515);
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+
+
+button {
+    font-size: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cecece;
+    cursor: pointer;
+    transition: .5s;
+} button:hover {
+    background-color: #cecece;
+    border: 1px solid #949494;
+    transform: scale(1.15);
+} button:active {
+    opacity: .55;
+}
+
+
+
+
+footer {
+    color: #fff;
+    font-weight: bolder;
+    padding: .5vh 0 .5vh;
+    font-size: 9px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    background-image: linear-gradient(to left, #000 20%, #555, #000 80%);
+    width: 100%;
+}
+footer a {
+    color: #fff;
+    text-shadow: 1px 0px 2px #0000ff;
+}
+
+@media screen and (max-height: 1110px)  {
+    footer {
+        position: fixed;
+    }
+}
