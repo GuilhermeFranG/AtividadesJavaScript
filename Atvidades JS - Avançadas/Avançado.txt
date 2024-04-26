@@ -1,0 +1,8 @@
+1 - Boletim  /
+Criar uma tabela com notas e presença de alunos usando JS, 
+com elemetos, como do e while.
+
+2 - Mover Objeto
+Criar um quadrado (ou qualquer outra forma), e usando Switch,
+com case e break, mover esse quadrado para todas as direções
+usando as setinhas do teclado.
