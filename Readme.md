@@ -32,5 +32,12 @@ Esse repositório foi feito para a realização de Atividades de fixação, envo
 ### Atividade 9: Quiz de Perguntas e Respostas
 ### Atividade 10: Lista de Tarefas  
 
+
+## [**`Avançado:`**](https://github.com/GuilhermeFranG/AtividadesJavaScript/blob/main/Atvidades%20JS%20-%20Avan%C3%A7adas/Avan%C3%A7ado.txt)
+
+
+### [Atividade 1: Boletim Escolar](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atvidades%20JS%20-%20Avan%C3%A7adas/Atividade%201)
+### Atividade 2: Mover Objeto
+
 \
 **[Gui_FranG](https://github.com/GuilhermeFranG)**
