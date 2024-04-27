@@ -22,7 +22,7 @@ function criarTabela() {
             notaTrimestre3: notaTrimestre3.toFixed(1),
             notaTrimestre4: notaTrimestre4.toFixed(1),
             frequencia: frequencia.toFixed(0),
-            mediaFinal: mediaFinal.toFixed(1),
+            mediaFinal: mediaFinal.toFixed(1)
         };
 
         alunos.push(aluno);
@@ -44,17 +44,17 @@ function criarTabela() {
     for (var i = 0; i < alunos.length; i++) {
         var aluno = alunos[i];
 
-        tabela += "<tr";
-        tabela += mediaFinal >= 6 && aluno.frequencia >= 75 ? " class='aprovado'" : " class='reprovado'";
-        tabela += ">";
-        tabela += "<td class='name'>" + aluno.nome + "</td>";
-        tabela += "<td>" + aluno.notaTrimestre1 + "</td>";
-        tabela += "<td>" + aluno.notaTrimestre2 + "</td>";
-        tabela += "<td>" + aluno.notaTrimestre3 + "</td>";
-        tabela += "<td>" + aluno.notaTrimestre4 + "</td>";
-        tabela += "<td>" + aluno.frequencia + "%" + "</td>";
-        tabela += "<td>" + aluno.mediaFinal + "</td>";
-        tabela += "</tr>";
+        tabela += `
+        <tr ${mediaFinal >= 6 && aluno.frequencia >= 75 ? " class='aprovado'" : " class='reprovado'"}>
+            <td class='name'>${aluno.nome}</td>
+            <td>${aluno.notaTrimestre1}</td>
+            <td>${aluno.notaTrimestre2}</td>
+            <td>${aluno.notaTrimestre3}</td>
+            <td>${aluno.notaTrimestre4}</td>
+            <td>${aluno.frequencia}%</td>
+            <td>${aluno.mediaFinal}</td>
+        </tr>
+        `;
     }
 
     tabela += "</table>";
