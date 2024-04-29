@@ -8,7 +8,7 @@ Desenvolva um contador de palavras que conte quantas palavras
 estão presentes em um texto digitado pelo usuário.
 
 
-3 - Relógio Digital
+3 - Relógio Digital  /
 Construa um relógio digital que exibe a hora atual em tempo real.
 
 
