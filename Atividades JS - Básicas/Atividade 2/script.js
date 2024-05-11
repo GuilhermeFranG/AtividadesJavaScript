@@ -91,7 +91,7 @@ function showMore() {
             advanced.style.display = "none";
         } else {
             moreValue.classList.add('hidden');
-            body.style.height = "110vh";
+            body.style.height = "100vh";
             showMoreBtn.textContent = "Cálculo Múltiplo";
             advanced.style.display = "inline";
         }
@@ -116,10 +116,11 @@ function showMoreAgain() {
     isMoreExpanded = !isMoreExpanded;
 }
 
-const operators = document.querySelectorAll(".operator")
+const operators = document.querySelectorAll(".operator");
 
-const advBtn = document.querySelectorAll(".hidden3")
-const advanced = document.getElementById("advanced")
+const advBtn = document.querySelectorAll(".hidden3");
+const advanced = document.getElementById("advanced");
+const form = document.getElementById("numForm");
 
 function openAdvanced() {
     advBtn.forEach(advBtn => {
@@ -130,6 +131,7 @@ function openAdvanced() {
                 advanced.style.rotate = "180deg";
                 showMoreBtn.style.display = "none";
                 num2.style.display = "none";
+                form.style.textAlign = "center";
                 operator.classList.add('hidden3');
             } else {
                 advBtn.classList.add('hidden3');
@@ -137,6 +139,7 @@ function openAdvanced() {
                 advanced.style.rotate = "0deg";
                 showMoreBtn.style.display = "inline";
                 num2.style.display = "inline";
+                form.style.textAlign = "";
                 operator.classList.remove('hidden3');
             }
         })

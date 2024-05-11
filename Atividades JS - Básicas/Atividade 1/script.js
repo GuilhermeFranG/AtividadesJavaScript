@@ -11,11 +11,9 @@ function showInfo() {
     var content = document.getElementById('content');
 
     if (!isClicked) {
-        info.innerHTML = "Olá, meu nome é " + nome + "  e tenho " + idade +
-            " anos de idade.";
+        info.innerHTML = `Olá, meu nome é ${nome} e tenho ${idade} anos de idade.`;
         info.style.display = "block";
-        content.innerHTML = "Estou estudando programação com o " + instituto + ", e atualmente estudo as linguagens "
-            + code + ".";
+        content.innerHTML = `Estou estudando programação com o ${instituto}, e atualmente estudo as linguagens ${code}.`;
         content.style.display = "block";
         body.style.backgroundColor = '#33337e';
     } else {
