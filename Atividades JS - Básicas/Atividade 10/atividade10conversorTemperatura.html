@@ -2,10 +2,12 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="AtB_10.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/91/91388.png" type="image/x-icon" />
+    <script src="scrpit.js" defer></script>
     <title>Conversor de Temperatura</title>
 </head>
 
@@ -18,7 +20,7 @@
     <main>
         <button id="theme" onclick="changeTheme()"><strong>Tema &#9790;</strong></button>
         <form name="converter" action="#" method="get">
-                <h3>Insira a temperatura:</h3>
+            <h3>Insira a temperatura:</h3>
             <div>
                 <input type="number" class="temp" id="temp1" name="temp1" required onkeyup="calcularTemp()" />
                 <select name="tipoTemp1" class="tipoTemp" id="tipoTemp1">
@@ -45,7 +47,5 @@
     </footer>
 
 </body>
-
-<script src="ATBasic10.js"></script>
 
 </html>
