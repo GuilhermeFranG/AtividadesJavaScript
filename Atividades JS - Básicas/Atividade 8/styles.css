@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -48,18 +44,19 @@ button {
 
 
 footer {
-    margin: 85px 0 0 0;
-    color: whitesmoke;
-    font-weight: bolder;
-    font-size: 12px;
     padding: 1vh 0 1vh;
-    position: relative;
-    text-align: center;
+    margin-top: 10vh;
+    position: absolute;
     bottom: 0;
-    background-image: linear-gradient(to left, black 20%, grey, black 80%);
     width: 100%;
+    color: rgb(216, 245, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
+    font-size: x-small;
+    background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
 }
 footer a {
-    color: whitesmoke;
-    text-shadow: 1px 0px 4px blue;
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
 }

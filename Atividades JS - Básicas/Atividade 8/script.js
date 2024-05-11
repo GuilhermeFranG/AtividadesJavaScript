@@ -39,9 +39,11 @@ function showImg() {
         if (!isShowed) {
             shyEmoji.classList.remove(["hidden"]);
             imgBtn.innerHTML = "👉////👈";
+            footer.style.position = "relative";
         } else {
             shyEmoji.classList.add(["hidden"]);
             imgBtn.innerHTML = "Mostrar Imagem";
+            footer.style.position = "absolute";
         }
     })
     isShowed = !isShowed;

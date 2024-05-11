@@ -8,17 +8,16 @@ consoleBtn.addEventListener('click', showConsole);
 
 function showText() {
     let message = document.getElementById('message');
-    if (message.style.display === 'none') {
+    if (message.innerHTML === "") {
         message.innerHTML = "Olá, mundo!";
         message.style.fontWeight = 'bold';
-        message.style.display = 'block';
         textBtn.style.width = '40px';
         textBtn.style.fontWeight = 'bold';
         textBtn.style.fontSize = '15px';
         textBtn.innerHTML = '^'
         textBtn.style.border = '3px solid blue';
     } else {
-        message.style.display = 'none';
+        message.innerHTML = "";
         textBtn.style.width = '';
         textBtn.innerHTML = 'Mostrar Texto';
         textBtn.style.fontWeight = '';

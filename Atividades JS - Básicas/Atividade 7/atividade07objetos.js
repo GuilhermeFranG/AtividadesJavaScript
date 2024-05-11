@@ -16,6 +16,29 @@ Este ícone automotivo é uma verdadeira joia para colecionadores e entusiastas 
 info(); /* Fusca 1980 de cor azul 100Km
 Este ícone automotivo é uma verdadeira joia para colecionadores e entusiastas de carros antigos! */
 
+
+
+
+function criarCarro({ modelo, marca, cor, ano }) {
+    console.log(`Modelo: ${modelo}
+Marca: ${marca}
+Cor: ${cor}
+Ano: ${ano}`);
+}
+
+const carro = {
+    modelo: "Ducato",
+    marca: "FIAT",
+    cor: "prata",
+    ano: 2015
+}
+
+criarCarro(carro);
+/*  Modelo: Ducato
+    Marca: FIAT
+    Cor: prata
+    Ano: 2015 */
+
 function criarComprador({ nome, nascimento, cidade, email, senha }) {
     console.log(`Nome: ${nome} 
 Data de nascimento: ${nascimento} 
