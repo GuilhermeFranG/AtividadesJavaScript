@@ -81,17 +81,19 @@ textarea:focus {
 
 
 footer {
-    color: #fff;
-    font-weight: bolder;
-    padding: .5vh 0 .5vh;
-    font-size: 9px;
+    padding: 1vh 0 1vh;
+    margin-top: 10vh;
     position: absolute;
-    text-align: center;
     bottom: 0;
-    background-image: linear-gradient(to left, #000 20%, #555, #000 80%);
     width: 100%;
+    color: rgb(216, 245, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
+    font-size: x-small;
+    background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
 }
 footer a {
-    color: #fff;
-    text-shadow: 1px 0px 2px #0000ff;
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
 }

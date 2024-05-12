@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,12 @@ body {
 
 header {
     margin: 45px;
-    text-shadow: 1px 1px 5px rgb(128, 199, 223);
+    color: #f5f5f5;
+    text-shadow: 1px 1px 5px #2ea1c7;
+    background-color: #225f96;
+    width: 100%;
+    text-align: center;
+    padding: 1vh 1vh;
 }   
 
 
@@ -33,11 +38,12 @@ input:focus {
 }
 
 button {
-    padding: 8px;
-    border-radius: 8px;
+    padding: 15px;
+    border-radius: 12px;
     border: 1px solid rgb(72, 138, 160);
+    font-size: x-large;
     cursor: pointer;
-    margin: 60px 0 0 27vw;
+    margin: 60px 0 0 23vw;
     transition: 0.4s;
 }
 button:hover {
@@ -48,9 +54,10 @@ button:hover {
 }
 
 label {
+    font-size: 20px;
     font-weight: bold;
     margin: 0 5vw 0 3vw;
-    text-shadow: 1px 1px 5px rgb(128, 199, 223);
+    text-shadow: 1px 1px 5px #2ea1c7;
 }
 
 #result {
@@ -64,17 +71,19 @@ label {
 
 
 footer {
-    color: whitesmoke;
-    font-weight: bolder;
     padding: 1vh 0 1vh;
-    font-size: 12px;
+    margin-top: 10vh;
     position: absolute;
-    text-align: center;
     bottom: 0;
-    background-image: linear-gradient(to left, black 20%, grey, black 80%);
     width: 100%;
+    color: rgb(216, 245, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
+    font-size: x-small;
+    background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
 }
 footer a {
-    color: whitesmoke;
-    text-shadow: 1px 0px 2px blue;
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
 }
