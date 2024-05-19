@@ -6,3 +6,8 @@ com elemetos, como do e while.
 Criar um quadrado (ou qualquer outra forma), e usando Switch,
 com case e break, mover esse quadrado para todas as direções
 usando as setinhas do teclado.
+
+3 - Jogo de sorteio  /
+Criar um jogo de sorteio, onde o usuário escolhe entre retângulos
+e o programa sorteia um número de 1 a 10 para ver se o usuário ganhou
+ou não.
