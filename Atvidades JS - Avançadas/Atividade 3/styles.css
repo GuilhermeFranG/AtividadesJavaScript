@@ -1,0 +1,80 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {font-family: Arial, Helvetica, sans-serif; height: 100%;}
+
+header {
+    background-image: linear-gradient(to right, #ff0,#f00, #f0f, #00f,#0f0);
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+    margin: 8px 0 8px;
+    padding: 2vh 0 2vh;
+}
+
+h1 {text-align: center; font-size: 40px;}
+
+
+.retangulo {
+    width: 130px;
+    height: 130px;
+    font-size: 24px;
+    font-weight: bolder;
+    transition: .4s;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid #250505 2px;
+    border-radius: 8px;
+}
+.retangulo:hover {transform: scale(1.04);}
+
+section {
+    border: 3px inset #000;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    background-color: #f5f5f5;
+    margin: 50px 0 50px 20vw;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}
+
+#vermelho {background-color: #f00;}
+#laranja {background-color: #ff7b00;}
+#amarelo {background-color: #ff0;}
+#marrom {background-color: #551b1b;}
+#verde {background-color: #0f0;}
+#ciano {background-color: #0ff;}
+#azul {background-color: #00f;}
+#roxo {background-color: #420a42;}
+#rosa {background-color: #f0f;}
+#branco {background-color: #fff;}
+
+
+
+
+footer {
+    padding: 1vh 0 1vh;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: rgb(216, 245, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
+    font-size: x-small;
+    background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
+}
+footer a {
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
+}
