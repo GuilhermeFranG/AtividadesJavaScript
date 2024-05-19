@@ -1,5 +1,6 @@
 function verificarPremio(id) {
     let premio = Math.floor(Math.random() * 10) + 1;
+
     if (id == premio) {
         alert(`✨🎊🎉🎉🎉🎊✨
 Parabêns, você ganhou o prêmio!!!
