@@ -48,16 +48,16 @@ section {
     text-shadow: 1px 1px 3px #000;
 }
 
-#vermelho {background-color: #f00;}
-#laranja {background-color: #ff7b00;}
-#amarelo {background-color: #ff0;}
-#marrom {background-color: #551b1b;}
-#verde {background-color: #0f0;}
-#ciano {background-color: #0ff;}
-#azul {background-color: #00f;}
-#roxo {background-color: #420a42;}
-#rosa {background-color: #f0f;}
-#branco {background-color: #fff;}
+#vermelho {background-image: linear-gradient(to top right, #ff3636, #ff0000, #ff3636);}
+#laranja {background-image: linear-gradient(to top right, #ff9b3e, #ff7b00, #ff9b3e);}
+#amarelo {background-image: linear-gradient(to top right, #ffff47, #ff0, #ffff47);}
+#marrom {background-image: linear-gradient(to top right, #6b2323, #551b1b, #6b2323);}
+#verde {background-image: linear-gradient(to top right, #53ff53, #0f0, #53ff53);}
+#ciano {background-image: linear-gradient(to top right, #50ffff, #0ff, #50ffff);}
+#azul {background-image: linear-gradient(to top right, #4242ff, #00f, #4242ff);}
+#roxo {background-image: linear-gradient(to top right, #5e1d5e, #420a42, #5e1d5e);}
+#rosa {background-image: linear-gradient(to top right, #ff4eff, #f0f, #ff4eff);}
+#branco {background-image: linear-gradient(to top right, #dddddd, #fff, #dddddd);}
 
 
 
