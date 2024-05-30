@@ -37,7 +37,7 @@ Esse repositório foi feito para a realização de Atividades de fixação, envo
 
 
 ### [Atividade 1: Boletim Escolar](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atvidades%20JS%20-%20Avan%C3%A7adas/Atividade%201)
-### Atividade 2: Mover Objeto
+### [Atividade 2: Mover Objeto](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atvidades%20JS%20-%20Avan%C3%A7adas/Atividade%202)
 ### [Atividade 3: Jogo do Sorteio](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atvidades%20JS%20-%20Avan%C3%A7adas/Atividade%203)
 
 \
