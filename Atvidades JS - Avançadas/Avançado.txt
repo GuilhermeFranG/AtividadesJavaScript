@@ -11,3 +11,12 @@ usando as setinhas do teclado.
 Criar um jogo de sorteio, onde o usuário escolhe entre retângulos
 e o programa sorteia um número de 1 a 10 para ver se o usuário ganhou
 ou não.
+
+4 - Tabela de idade  /
+Criar uma tabela que peça idade e nome de pessoas usando JS e mostre
+a pessoa mais velha e mais nova entre todas as pessoas inseridas.
+
+
+5 - To-do list
+Criar uma lista de tarefas que o usuário possa adicionar e remover
+tarefas, usando os eventos DOMContentLoaded, submit e de click.
