@@ -1,0 +1,129 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    margin: 10px 0 3px;
+    font-size: 20px;
+    text-shadow: 1px 3px 3px #ccc;
+    box-shadow: 1px 3px 3px 1px #ccc;
+    background-image: linear-gradient(to right, #ddd,#fff,#ddd);
+    padding: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #4a6977;
+    text-shadow: 1px 1px 4px #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 3px 0 40px;
+    transition: .4s;
+}
+button:hover {
+    background-color: #456;
+    transform: scale(1.1);
+}
+
+
+
+
+main {
+    padding: 8px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+thead {
+    background-image: linear-gradient(to right, #ddd,#fff,#ddd);
+    text-shadow: 1px 3px 3px #ccc;
+    font-size: 22px;
+}
+
+td, tr, th {
+    padding: 5px;
+    width: 30vw;
+    border: 3px solid #000;
+}
+
+tbody {
+    font-size: 18px;
+    background-image: linear-gradient(to right, #0088ffa5, #0051ff, #0088ffa5);
+    color: #fff;
+    text-shadow: 1px 3px 3px #002;
+}
+
+table {
+    border: 2px solid #000;
+    border-spacing: 1rem;
+    border-radius: 12px;
+    width: 75vw;
+    font-weight: bold;
+    margin-bottom: 10vh;
+}
+
+tfoot {
+    padding: 2px;
+    font-size: small;
+}
+
+.old {
+    background-image: linear-gradient(to right, #a52a2a9d, #fd04049d, #a52a2a9d);
+}
+
+.young {
+    background-image: linear-gradient(to right, #74ed649d, #22ff059d, #74ed649d);;
+}
+
+.nome {
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+
+
+footer {
+    margin-top: 2vh;
+    padding: 1vh 0 1vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgb(216, 245, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
+    font-size: x-small;
+    background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
+}
+footer a {
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
+}
+
+@media screen and (max-height: 1110px)  {
+    footer {
+        position: fixed;
+    }
+}
