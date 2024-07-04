@@ -40,7 +40,7 @@ Esse repositório foi feito para a realização de Atividades de fixação, envo
 ### [Atividade 2: Mover Objeto](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atvidades%20JS%20-%20Avan%C3%A7adas/Atividade%202)
 ### [Atividade 3: Jogo do Sorteio](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atvidades%20JS%20-%20Avan%C3%A7adas/Atividade%203)
 ### [Atividade 4: Tabela de Idade](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atvidades%20JS%20-%20Avan%C3%A7adas/Atividade%204)
-### Atividade 3: To-do List
+### [Atividade 5: To-do List](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atvidades%20JS%20-%20Avan%C3%A7adas/Atividade%205)
 
 \
 **[Gui_FranG](https://github.com/GuilhermeFranG)**
