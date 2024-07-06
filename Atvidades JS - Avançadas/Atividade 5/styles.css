@@ -1,0 +1,187 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111a2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 2px 2px #6c59cf;
+    padding: 20px;
+    background-color: #eee;
+}
+
+h2 {text-shadow: 1px 2px #ccc;}
+
+#user {
+    font: bold 30px Verdana;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+#login {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid #cecece;
+    cursor: pointer;
+    transition: .5s;
+} #login:hover {
+    background-color: #88b8df;
+    border: 1px solid #5067a7;
+    font-weight: bold;
+    transform: scale(1.15);
+} #login :active {
+    opacity: .55;
+}
+
+#favCor {
+    font-size: 18px;
+    margin-top: 10px;
+    animation: colorChange 10s 6s infinite;
+    text-shadow: 1px 1px 2px #000;
+}
+@keyframes colorChange {
+    0% {color: #000;}
+    10% {color: #0088ff;}
+    25% {color: #da5a5a;}
+    50% {color: #98f30f;}
+    75% {color: #ffe23b;}
+    90% {color: #000;}
+}
+
+@keyframes colorBorder {
+    0% {border-color: #000;}
+    10% {border-color: #0088ff;}
+    25% {border-color: #da5a5a;}
+    50% {border-color: #98f30f;}
+    75% {border-color: #ffe23b;}
+    90% {border-color: #000;}
+}
+
+.hidden {display: none;}
+
+
+
+
+#toDoContainer {
+    border-left: 5px solid #0088ffaa;
+    border-right: 5px solid #0088ffaa;
+    padding: 10px 50px 8px 50px;
+}
+
+form {
+    background-color: #9fb9ce;
+    padding: 35px;
+    border-radius: 6px;
+    width: 100%;
+    overflow-y: scroll;
+    height: 345px;
+    width: 100%;
+    box-shadow: -2px -1px 2px 1px #6c59cf;
+} form::-webkit-scrollbar {display: none;} /*Scrollbar pseudo-element Chrome*/
+
+#newToDo {
+    padding: 12px;
+    margin-right: 35px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    transition: .2s;
+    outline: none;
+} 
+#newToDo:hover { box-shadow: 1px 1px 2px 2px #225f96;} 
+#newToDo:focus {box-shadow: 1px 1px 2px 2px #225f96;}
+
+#submitButton {
+    margin-left: 35px;
+    padding: 6px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+    outline: none;
+    font-weight: bolder;
+} 
+#submitButton:hover {
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    color: #0e1d3a;
+}
+
+li {
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 0px 10px 4px 20px;
+    border-radius: 5px;
+    list-style: none;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ddd;
+    text-shadow: 1px 2px #ccc;
+    transition: .2s;
+    font-size: 16px;
+    width: 100%;
+    box-shadow: 1px 2px 1px 1px #0a0a0a;
+}
+
+.deleteButton {
+    color: #000;
+    font-weight: bold;
+    font-size: 26px;
+    border: none;
+    border-radius: 7px;
+    background: none;
+    cursor: pointer;
+    transition: .4s;
+    padding: 4px 6px 2px 6px;
+    margin-top: 4px;
+    width: 10%;
+    margin-left: 10rem;
+} .deleteButton:hover {
+    background-color: #bb0000;
+    color: #fff;
+    box-shadow: 1px 1px 1px 1px #0a0a0a;
+}
+
+.completed {
+    color: #00000066;
+    background-color: #53d12d;
+    text-decoration: line-through;
+    text-shadow: none;
+    box-shadow: 1px 2px 1px 1px #365507;
+} 
+
+
+
+
+footer {
+    padding: 1vh 0 1vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgb(216, 245, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
+    font-size: x-small;
+    background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
+}
+footer a {
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
+}
