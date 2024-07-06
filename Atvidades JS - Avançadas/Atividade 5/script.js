@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function addToDoItem(newToDoText) {
     const li = document.createElement('li');
-    li.textContent = newToDoText.charAt(0).toUpperCase() + newToDoText.slice(1).toLowerCase();
+    li.textContent = formatarTexto(newToDoText);
 
     const deleteButton = document.createElement('button');
-    deleteButton.textContent = 'Excluir';
+    deleteButton.innerHTML = '&times;';
     deleteButton.classList.add('deleteButton');
     deleteButton.addEventListener('click', () => {
         li.remove();
@@ -32,33 +32,53 @@ function addToDoItem(newToDoText) {
     toDoList.appendChild(li);
 }
 
-const nome = prompt("Qual seu nome?");
-const fundo = prompt("Qual sua cor favorita?");
-
-const user = document.getElementById("user");
-user.innerHTML = nome.charAt(0).toUpperCase() + nome.slice(1).toLowerCase();
-
-const favCor = document.getElementById("favCor");
-favCor.innerHTML = fundo.charAt(0).toUpperCase() + fundo.slice(1).toLowerCase();
-
-if (fundo === 'azul') {
-    user.style.backgroundColor = "#0088ffcc";
-    user.style.textShadow = "1px 1px 2px #eee";
-    user.style.border = "3px solid #00f";
-} else if (fundo === 'vermelho') {
-    user.style.backgroundColor = "#da5a5acc";
-    user.style.textShadow = "1px 1px 2px #800000";
-    user.style.border = "3px solid #f00";
-} else if (fundo === 'verde') {
-    user.style.backgroundColor = "#98f30fcc";
-    user.style.textShadow = "1px 1px 2px #369636cc";
-    user.style.border = "3px solid #006400";
-} else if (fundo === 'amarelo') {
-    user.style.backgroundColor = "#ffe23baa";
-    user.style.textShadow = "1px 1px 2px #a78800";
-    user.style.border = "3px solid #e6ba4dcc";
-} else {
-    user.style.backgroundColor = "#f5f5f5";
-    user.style.textShadow = "1px 1px 2px #bbb";
-    user.style.border = "3px outset #ccc";
+function formatarTexto(texto) {
+    return texto.charAt(0).toUpperCase() + texto.slice(1).toLowerCase();
 }
+
+const loginButton = document.getElementById("login");
+loginButton.addEventListener('click', () => {
+    toDoForm.classList.remove("hidden");
+    loginButton.style.display = 'none';
+
+    document.getElementById("toDoContainer").classList.remove("hidden");
+
+    const nome = prompt("Qual seu nome?");
+    const favCor = prompt("Qual sua cor favorita?");
+
+    var user = {
+        nome: formatarTexto(nome),
+        corFavorita: formatarTexto(favCor)
+    };
+
+    const userName = document.getElementById("user");
+    const userFavCor = document.getElementById("favCor");
+
+    userName.classList.remove("hidden");
+    userFavCor.classList.remove("hidden");
+    userName.innerHTML = user.nome;
+    userFavCor.innerHTML = user.corFavorita;
+
+    if (favCor === 'azul') {
+        userName.style.backgroundColor = "#0088ffcc";
+        userName.style.textShadow = "1px 1px 2px #3535ff";
+        userName.style.border = "3px solid #00f";
+    } else if (favCor === 'vermelho') {
+        userName.style.backgroundColor = "#da5a5acc";
+        userName.style.textShadow = "1px 1px 2px #800000";
+        userName.style.border = "3px solid #f00";
+    } else if (favCor === 'verde') {
+        userName.style.backgroundColor = "#98f30fcc";
+        userName.style.textShadow = "1px 1px 2px #369636cc";
+        userName.style.border = "3px solid #006400";
+    } else if (favCor === 'amarelo') {
+        userName.style.backgroundColor = "#ffe23baa";
+        userName.style.textShadow = "1px 1px 2px #a78800";
+        userName.style.border = "3px solid #e6ba4dcc";
+    } else {
+        userName.style.backgroundColor = "#f5f5f5";
+        userName.style.textShadow = "1px 1px 2px #bbb";
+        userName.style.border = "3px outset";
+        userName.style.animation = "colorBorder 10s infinite";
+    }
+})
