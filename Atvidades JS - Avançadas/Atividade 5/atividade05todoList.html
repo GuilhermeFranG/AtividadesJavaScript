@@ -15,16 +15,19 @@
 
     <header>
         <h2>Minha lista de Tarefas</h2>
-        <p id="user"></p>
-        <p id="favCor"></p>
+        <button id="login">Crie sua conta</button>
+        <p id="user" class="hidden "></p>
+        <p id="favCor" class="hidden "></p>
     </header>
 
     <main>
-        <form id="toDoForm">
-            <input type="text" name="newToDo" id="newToDo" placeholder="Adicionar nova tarefa..." required />
-            <button type="submit">Adicionar</button>
-            <ul id="toDoList"></ul>
-        </form>
+        <div id="toDoContainer" class="hidden ">
+            <form id="toDoForm" class="hidden ">
+                <input type="text" name="newToDo" id="newToDo" placeholder="Adicionar nova tarefa..." required />
+                <button type="submit" id="submitButton">Adicionar</button>
+                <ul id="toDoList"></ul>
+            </form>
+        </div>
     </main>
 
     <footer>
