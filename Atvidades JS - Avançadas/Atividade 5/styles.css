@@ -96,6 +96,12 @@ form {
     box-shadow: -2px -1px 2px 1px #6c59cf;
 } form::-webkit-scrollbar {display: none;} /*Scrollbar pseudo-element Chrome*/
 
+#addToDoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 #newToDo {
     padding: 12px;
     margin-right: 35px;
@@ -103,6 +109,7 @@ form {
     border: 1px solid #bbb;
     transition: .2s;
     outline: none;
+    width: 50%;
 } 
 #newToDo:hover { box-shadow: 1px 1px 2px 2px #225f96;} 
 #newToDo:focus {box-shadow: 1px 1px 2px 2px #225f96;}
@@ -116,6 +123,7 @@ form {
     transition: .2s;
     outline: none;
     font-weight: bolder;
+    width: 30%;
 } 
 #submitButton:hover {
     background-color: #ccc;
@@ -126,7 +134,7 @@ form {
 li {
     cursor: pointer;
     margin-top: 15px;
-    padding: 0px 10px 4px 20px;
+    padding: 0 10px 4px 10px;
     border-radius: 5px;
     list-style: none;
     font-weight: bolder;
@@ -136,8 +144,12 @@ li {
     transition: .2s;
     font-size: 16px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 1px 2px 1px 1px #0a0a0a;
 }
+.liText {width: 100%;}
 
 .deleteButton {
     color: #000;
@@ -159,12 +171,12 @@ li {
 }
 
 .completed {
-    color: #00000066;
     background-color: #53d12d;
-    text-decoration: line-through;
     text-shadow: none;
     box-shadow: 1px 2px 1px 1px #365507;
-} 
+    color: #00000066;
+} .completed::before {content: '\2714'; margin-right: 10px;}
+.completedTask {text-decoration: line-through;}
 
 
 
