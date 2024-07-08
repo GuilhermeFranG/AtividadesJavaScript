@@ -15,7 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function addToDoItem(newToDoText) {
     const li = document.createElement('li');
-    li.textContent = formatarTexto(newToDoText);
+
+    const liText = document.createElement('p');
+    liText.classList.add('liText');
+    liText.textContent = formatarTexto(newToDoText);
 
     const deleteButton = document.createElement('button');
     deleteButton.innerHTML = '&times;';
@@ -25,9 +28,11 @@ function addToDoItem(newToDoText) {
     });
 
     li.addEventListener('click', () => {
+        liText.classList.toggle('completedTask');
         li.classList.toggle('completed');
     });
 
+    li.appendChild(liText);
     li.appendChild(deleteButton);
     toDoList.appendChild(li);
 }
