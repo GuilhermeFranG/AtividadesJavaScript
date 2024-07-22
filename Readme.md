@@ -30,7 +30,6 @@ Esse repositório foi feito para a realização de Atividades de fixação, envo
 ### Atividade 7: Calculadora de Desconto
 ### Atividade 8: Gerador de Senhas
 ### Atividade 9: Quiz de Perguntas e Respostas
-### Atividade 10: Lista de Tarefas  
 
 
 ## [**`Avançado:`**](https://github.com/GuilhermeFranG/AtividadesJavaScript/blob/main/Atvidades%20JS%20-%20Avan%C3%A7adas/Avan%C3%A7ado.txt)

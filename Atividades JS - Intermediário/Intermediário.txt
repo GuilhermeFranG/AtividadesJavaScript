@@ -44,8 +44,3 @@ caracteres permitidos.
 Elabore um quiz de perguntas e respostas com múltiplas opções
 onde o usuário pode responder e verificar se a resposta está
 correta.
-
-
-10 - Lista de Tarefas
-Crie uma aplicação de lista de tarefas que permita ao usuário
-adicionar, remover e marcar como concluídas as tarefas.
