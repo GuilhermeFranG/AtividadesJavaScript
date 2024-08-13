@@ -19,6 +19,6 @@ function calcularMedia() {
     <p class="resultText" style="color: #2929ad">Valores: ${valores.join(" + ")}</p>
     <p class="resultText" style="color: #b40000">Soma: ${soma}</p>`;
 
-    // Number.isInteger(n) verifica se número é inteiro usando true e false.
-    // .join('caracterSeparador') adiciona uma array a uma string e separa ela pelo caracterSeparador.
+    // Number.isInteger(n) verifica se número é inteiro usando true e false
+    // .join('caracterSeparador') adiciona uma array a uma string e separa ela pelo caracterSeparador
 }
