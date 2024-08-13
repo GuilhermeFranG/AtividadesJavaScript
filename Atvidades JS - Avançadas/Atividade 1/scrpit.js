@@ -45,7 +45,7 @@ function criarTabela() {
         var aluno = alunos[i];
 
         tabela += `
-        <tr ${mediaFinal >= 6 && aluno.frequencia >= 75 ? " class='aprovado'" : " class='reprovado'"}>
+        <tr ${aluno.mediaFinal >= 6 && aluno.frequencia >= 75 ? " class='aprovado'" : " class='reprovado'"}>
             <td class='name'>${aluno.nome}</td>
             <td>${aluno.notaTrimestre1}</td>
             <td>${aluno.notaTrimestre2}</td>
