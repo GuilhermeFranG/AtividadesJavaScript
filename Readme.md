@@ -24,7 +24,7 @@ Esse repositório foi feito para a realização de Atividades de fixação, envo
 ### [Atividade 1: Calculadora de IMC](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atividades%20JS%20-%20Intermedi%C3%A1rio/Atividade%201)
 ### [Atividade 2: Contador de Palavras](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atividades%20JS%20-%20Intermedi%C3%A1rio/Atividade%202)
 ### [Atividade 3: Relógio Digital](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atividades%20JS%20-%20Intermedi%C3%A1rio/Atividade%203)
-### Atividade 4: Calculadora de Média
+### [Atividade 4: Calculadora de Média](https://github.com/GuilhermeFranG/AtividadesJavaScript/tree/main/Atividades%20JS%20-%20Intermedi%C3%A1rio/Atividade%204)
 ### Atividade 5: Conversor de Moeda
 ### Atividade 6: Jogo da Forca
 ### Atividade 7: Calculadora de Desconto

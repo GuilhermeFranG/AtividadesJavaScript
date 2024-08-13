@@ -12,7 +12,7 @@ estão presentes em um texto digitado pelo usuário.
 Construa um relógio digital que exibe a hora atual em tempo real.
 
 
-4 - Calculadora de Média
+4 - Calculadora de Média  /
 Crie uma calculadora de média que solicite ao usuário várias
 notas e calcule a média final.
 
