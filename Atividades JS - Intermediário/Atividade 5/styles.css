@@ -1,0 +1,64 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+#palavra {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+#mensagemGanhar {
+    display: none;
+}
+
+#btnReiniciar {
+    display: none;
+    background-color: #02bd02;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    transition: .2s;
+}
+#btnReiniciar:hover {
+    background-color: #00b300;
+    color: #2c2c2c;
+    border-color: #2c2c2c;
+    transform: scale(1.05);
+}
+
+
+
+
+
+footer {
+    padding: 1vh 0 1vh;
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgb(216, 245, 255);
+    text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
+    font-size: x-small;
+    background-image: linear-gradient(to right, #225f96, #0088ff, #225f96);
+}
+footer a {
+    text-decoration: none;
+    color: rgb(131, 224, 255);
+}
