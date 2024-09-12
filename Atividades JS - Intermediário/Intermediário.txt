@@ -17,30 +17,25 @@ Crie uma calculadora de média que solicite ao usuário várias
 notas e calcule a média final.
 
 
-5 - Conversor de Moeda
-Desenvolva um conversor de moeda que converta valores de uma
-moeda para outra com base em taxas de câmbio fornecidas.
-
-
-6 - Jogo da Forca
+5 - Jogo da Forca  
 Implemente o clássico jogo da forca, onde o jogador tenta
 adivinhar uma palavra oculta antes de atingir um número
 máximo de tentativas.
 
 
-7 - Calculadora de Desconto
+6 - Calculadora de Desconto
 Crie uma calculadora de desconto que solicite ao usuário o preço
 original de um produto e a porcentagem de desconto, e calcule o
 preço final após o desconto.
 
 
-8 - Gerador de Senhas
+7 - Gerador de Senhas
 Desenvolva um gerador de senhas que crie senhas aleatórias com
 base em critérios definidos pelo usuário, como comprimento e
 caracteres permitidos.
 
 
-9 - Quiz de Perguntas e Respostas
+8 - Quiz de Perguntas e Respostas
 Elabore um quiz de perguntas e respostas com múltiplas opções
 onde o usuário pode responder e verificar se a resposta está
 correta.
