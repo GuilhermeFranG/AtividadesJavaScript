@@ -14,6 +14,14 @@ body {
     gap: 2rem;
 }
 
+header {
+    margin: 20px;
+}
+
+#game  {
+    display: none;
+}
+
 #palavra {
     font-size: 2rem;
     margin: 10px;
@@ -23,7 +31,7 @@ body {
     display: none;
 }
 
-#btnReiniciar {
+#resetBtn {
     display: none;
     background-color: #02bd02;
     padding: 10px;
@@ -34,7 +42,7 @@ body {
     margin: 10px;
     transition: .2s;
 }
-#btnReiniciar:hover {
+#resetBtn:hover {
     background-color: #00b300;
     color: #2c2c2c;
     border-color: #2c2c2c;

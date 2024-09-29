@@ -1,12 +1,10 @@
-const listaPalavras = ['javascript', 'html', 'css', 'front', 'evoluir', 'tags', 'atributo', 'fullstack', 'landigpage'];
+const listaPalavras = ['javascript', 'html', 'css', 'front', 'evoluir', 'tags', 'atributo', 'fullstack', 'landingpage'];
 
 let palavraEscolhida;
 let exibicaoPalavra;
 let letrasChutadas;
 let tentativasRestantes;
 let numErros;
-
-
 
 // Função para começar o Jogo modo aleatório//
 function modoAleatorio() {
@@ -101,6 +99,7 @@ function chutarLetra() {
     const entradaLetra = document.getElementById("entradaLetra");
     const letra = entradaLetra.value.toLowerCase();
 
+    // Verificar se a letra é válida //
     if (!letra.match(/[a-zà-ùç]/i)) {
         // .match() = Verifica se o valor encotra com pedido, se não retorna null //
         // a-zà-ùç/i = De A a Z e caracteres especiais //
