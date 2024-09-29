@@ -26,13 +26,15 @@
         </div>
 
         <section id="game">
-            <img id="forca" src="img/forca0.png" alt="forca" />
+            <img id="forca" src="img/forca0.png" alt="forca" width="350px" height="350px" />
+            <p id="hint"></p>
             <div id="palavra">_ _ _</div>
             <input type="text" id="entradaLetra" placeholder="Chute uma letra" maxlength="1" />
             <button type="button" id="btnChutar" onclick="chutarLetra()">Chutar</button>
 
             <h2>Letras Chutadas</h2>
             <div id="letrasChutadas"></div>
+            <p id="tentativasRestantes"></p>
             <div id="mensagem"></div>
             <button id="resetBtnRandom" class="reset" onclick="modoAleatorio()">Reiniciar</button>
             <button id="resetBtnNormal" class="reset" onclick="modoNormal()">Reiniciar</button>
