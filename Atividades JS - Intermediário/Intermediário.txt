@@ -17,7 +17,7 @@ Crie uma calculadora de média que solicite ao usuário várias
 notas e calcule a média final.
 
 
-5 - Jogo da Forca  
+5 - Jogo da Forca  /
 Implemente o clássico jogo da forca, onde o jogador tenta
 adivinhar uma palavra oculta antes de atingir um número
 máximo de tentativas.
