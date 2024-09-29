@@ -1,6 +1,7 @@
 const listaPalavras = ['javascript', 'html', 'css', 'front', 'evoluir', 'tags', 'atributo', 'fullstack', 'landingpage'];
 
 let palavraEscolhida;
+let dicaPalavra;
 let exibicaoPalavra;
 let letrasChutadas;
 let tentativasRestantes;
@@ -42,6 +43,10 @@ function modoNormal() {
     palavraEscolhida = prompt("Escolha uma palavra:");
     console.log(palavraEscolhida);
 
+    // Dica da paalavra //
+    dicaPalavra = prompt("Dica da palavra:");
+    document.getElementById('hint').innerText = `Dica: ${dicaPalavra.toUpperCase()}`;
+
     // Exibição dos Underscores/Underlines "_" //
     exibicaoPalavra = Array(palavraEscolhida.length).fill('_');
     console.log(exibicaoPalavra);
@@ -64,6 +69,7 @@ function atualizarExibicao() {
     document.getElementById('letrasChutadas').innerText = `${letrasChutadas.join(', ')}`;
 
     document.getElementById('forca').src = `img/forca${numErros}.png`;
+    document.getElementById("tentativasRestantes").innerText = `Tentativas Restantes: ${tentativasRestantes}`;
 
     document.getElementById('entradaLetra').disabled = false;
     document.getElementById('btnChutar').disabled = false;
@@ -130,6 +136,14 @@ function chutarLetra() {
 
     atualizarExibicao();
 }
+
+// Evento que permite usar a tecla enter no input das letras //
+entradaLetra.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("btnChutar").click();
+    }
+});
 
 function terminarJogoAleatorio(mensagem) {
     // Desabilitar botão e campo de entrada //
