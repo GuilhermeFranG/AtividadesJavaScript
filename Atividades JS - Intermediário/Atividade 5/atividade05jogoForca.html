@@ -11,7 +11,7 @@
     <title>Jogo da Forca</title>
 </head>
 
-<body> 
+<body>
 
     <header>
         <h1>Jogo da Forca</h1>
@@ -19,18 +19,28 @@
     </header>
 
     <main>
-        <img id="forca" src="#" alt="forca" />
-        <div id="palavra">_ _ _</div>
-        <input type="text" id="entradaLetra" placeholder="Chute uma letra"/>
-        <button type="button" id="btnChutar">Chutar</button>
+        <div id="gameModes">
+            <h1>Modos de Jogo</h1>
+            <button id="random" onclick="modoAleatorio()">Aleatório</button>
+            <button id="normal" onclick="modoNormal()">Normal</button>
+        </div>
 
-        <h2>Letras Chutadas</h2>
-        <div id="letrasChutadas"></div>
-        <div id="mensagemGanhar">Você ganhou!</div>
-        <button id="btnReiniciar">Recomeçar</button>
+        <section id="game">
+            <img id="forca" src="img/forca0.png" alt="forca" />
+            <div id="palavra">_ _ _</div>
+            <input type="text" id="entradaLetra" placeholder="Chute uma letra" maxlength="1" />
+            <button type="button" id="btnChutar" onclick="chutarLetra()">Chutar</button>
+
+            <h2>Letras Chutadas</h2>
+            <div id="letrasChutadas"></div>
+            <div id="mensagem"></div>
+            <button id="resetBtnRandom" class="reset" onclick="modoAleatorio()">Reiniciar</button>
+            <button id="resetBtnNormal" class="reset" onclick="modoNormal()">Reiniciar</button>
+            <button onClick="window.location.reload();" id="menuBtn">Voltar</button>
+        </section>
     </main>
 
-    <footer>
+    <footer id="footer">
         <p><a href="https://github.com/GuilhermeFranG" target="_blank">Gui_FranG</a> - &copy; 2024</a></p>
         <p>Todos direitos reservados</p>
     </footer>
