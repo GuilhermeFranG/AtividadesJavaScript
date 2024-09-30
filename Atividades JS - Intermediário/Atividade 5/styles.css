@@ -15,38 +15,98 @@ body {
 }
 
 header {
-    margin: 20px;
+    margin: 40px 0 30px 0;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 3px 3px 1px 2px #aaa;
+    border: 2px solid #aaa;
 }
 
-#game  {
+h1, h3 {
+    margin-bottom: 5px;
+}
+
+h2, #letrasChutadas, #tentativasRestantes {
+    margin: 15px 0 15px 0;
+}
+
+
+
+#gameModes {
+    margin: 8vh 0 10px 0;
+    transform: scale(1.2);
+}
+
+#game, .reset  {
     display: none;
 }
+
+#tentativasRestantes {
+    font: 1px;
+}
+
+
+
+#mensagem {
+    margin: 50px;
+    font-size: 20px;
+    
+}
+
+.loser {
+    box-shadow: 1px 2px 1px 1px #f00; 
+    padding: 8px; 
+    border-radius: 3px;
+}
+.winner {
+    animation: changeColor 8s ease-in 3s infinite;
+    padding: 50px;
+    border-radius: 999%;
+}
+@keyframes changeColor {
+    10% {text-shadow: 1px 1px #cc0000; box-shadow: 1px 1px 1px 1px #cc0000; background-color: #ff0000a1;}
+    20% {text-shadow: 1px 1px #cf7c00; box-shadow: 1px 1px 1px 1px #cf7c00; background-color: #ff9900a1;}
+    40% {text-shadow: 1px 1px #d1d100; box-shadow: 1px 1px 1px 1px #d1d100; background-color: #ffff00a1;}
+    50% {text-shadow: 1px 1px #00d300; box-shadow: 1px 1px 1px 1px #00d300; background-color: #00ff00a1;}
+    70% {text-shadow: 1px 1px #00c0c0; box-shadow: 1px 1px 1px 1px #00c0c0; background-color: #00ffffa1;}
+    80% {text-shadow: 1px 1px #0000af; box-shadow: 1px 1px 1px 1px #0000af; background-color: #0000ffa1;}
+    90% {text-shadow: 1px 1px #c900c9; box-shadow: 1px 1px 1px 1px #c900c9; background-color: #ff00ffa1;}
+}
+
+
 
 #palavra {
     font-size: 2rem;
     margin: 10px;
 }
 
-#mensagemGanhar {
-    display: none;
+#entradaLetra {
+    font-size: 15px;
+    padding: 8px;
+    width: 50%;
+    margin: 18px;
 }
 
-#resetBtn {
-    display: none;
-    background-color: #02bd02;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid #000;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 10px;
-    transition: .2s;
+.resetBtnContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-#resetBtn:hover {
-    background-color: #00b300;
-    color: #2c2c2c;
-    border-color: #2c2c2c;
+
+button {
+    cursor: pointer;
+    margin: 20px 0 0 10px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px outset #000;
+    transition: .2s;
+    font-weight: bold;
+} 
+button:hover:enabled { /* :enabled = Estilo :hover apenas aplicado a botões ativos */
     transform: scale(1.05);
+    box-shadow: 1px 1px 3px 1px #ccc;
+    background-color: #e7e7e7;
 }
 
 
