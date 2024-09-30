@@ -1,5 +1,5 @@
-const listaPalavras = ['javascript', 'html', 'css', 'front', 'evoluir', 'tags', 'atributo', 'fullstack', 'landingpage'];
-
+const listaPalavras = ['css', 'oi'];
+// 'javascript', 'html', 'css', 'front', 'evoluir', 'tags', 'atributo', 'fullstack', 'landingpage'
 let palavraEscolhida;
 let dicaPalavra;
 let exibicaoPalavra;
@@ -30,6 +30,10 @@ function modoAleatorio() {
     // Número de erros //
     numErros = 0;
 
+    // Mensagem da header //
+    document.getElementById('titleMode').innerText = `Modo Aleátorio`;
+    document.getElementById('headMessage').innerText = `Se desafie a descobri a palavra oculta!`;
+
     atualizarExibicao();
 }
 
@@ -46,6 +50,11 @@ function modoNormal() {
     // Dica da paalavra //
     dicaPalavra = prompt("Dica da palavra:");
     document.getElementById('hint').innerText = `Dica: ${dicaPalavra.toUpperCase()}`;
+    if (dicaPalavra === "") {
+        document.getElementById('hint').style.display = 'none';
+    } else {
+        document.getElementById('hint').style.display = 'block';
+    }
 
     // Exibição dos Underscores/Underlines "_" //
     exibicaoPalavra = Array(palavraEscolhida.length).fill('_');
@@ -60,6 +69,10 @@ function modoNormal() {
     // Número de erros //
     numErros = 0;
 
+    // Mensagem da header //
+    document.getElementById('titleMode').innerText = `Modo Normal`;
+    document.getElementById('headMessage').innerText = `Escolha uma palavra e desafie seus amigos!`;
+
     atualizarExibicao();
 }
 
@@ -69,7 +82,7 @@ function atualizarExibicao() {
     document.getElementById('letrasChutadas').innerText = `${letrasChutadas.join(', ')}`;
 
     document.getElementById('forca').src = `img/forca${numErros}.png`;
-    document.getElementById("tentativasRestantes").innerText = `Tentativas Restantes: ${tentativasRestantes}`;
+    document.getElementById("tentativasRestantes").innerHTML = `<strong>Tentativas Restantes:</strong> ${tentativasRestantes}`;
 
     document.getElementById('entradaLetra').disabled = false;
     document.getElementById('btnChutar').disabled = false;
@@ -82,21 +95,21 @@ function atualizarExibicao() {
     // Terminar jogo //
     if (!listaPalavras.includes(palavraEscolhida)) {
         if (tentativasRestantes === 0) {
-            terminarJogoNormal(`Você perdeu! 😥
-        A palavra era ${palavraEscolhida}`);
+            terminarJogoNormal(`<p class="loser">Você perdeu! 😥 <br>
+        A palavra era ${palavraEscolhida}</p>`);
         } else if (!exibicaoPalavra.includes('_')) {
-            terminarJogoNormal(`🎊🎉🎊🎉🎊🎉
-        Parabéns! Você acertou!
-        🎊🎉🎊🎉🎊🎉`)
+            terminarJogoNormal(`<p class="winner">🎊🎉🎊🎉🎊🎉 <br>
+        Parabéns! Você acertou! <br>
+        🎊🎉🎊🎉🎊🎉</p>`);
         }
     } else {
         if (tentativasRestantes === 0) {
-            terminarJogoAleatorio(`Você perdeu! 😥
-        A palavra era ${palavraEscolhida}`);
+            terminarJogoAleatorio(`<p class="loser">Você perdeu! 😥 <br>
+        A palavra era ${palavraEscolhida}</p>`);
         } else if (!exibicaoPalavra.includes('_')) {
-            terminarJogoAleatorio(`🎊🎉🎊🎉🎊🎉
-        Parabéns! Você acertou!
-        🎊🎉🎊🎉🎊🎉`)
+            terminarJogoAleatorio(`<p class="winner">🎊🎉🎊🎉🎊🎉 <br>
+        Parabéns! Você acertou! <br>
+        🎊🎉🎊🎉🎊🎉</p>`);
         }
     }
 }
@@ -151,7 +164,7 @@ function terminarJogoAleatorio(mensagem) {
     document.getElementById('btnChutar').disabled = true;
 
     // Exibir mensagem //
-    document.getElementById('mensagem').innerText = mensagem;
+    document.getElementById('mensagem').innerHTML = mensagem;
 
     // Exibir resetButton //
     document.getElementById('resetBtnRandom').style.display = 'block';
@@ -163,7 +176,7 @@ function terminarJogoNormal(mensagem) {
     document.getElementById('btnChutar').disabled = true;
 
     // Exibir mensagem //
-    document.getElementById('mensagem').innerText = mensagem;
+    document.getElementById('mensagem').innerHTML = mensagem;
 
     // Exibir resetButton //
     document.getElementById('resetBtnNormal').style.display = 'block';

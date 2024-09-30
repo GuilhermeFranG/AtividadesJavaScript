@@ -15,7 +15,8 @@
 
     <header>
         <h1>Jogo da Forca</h1>
-        <p>Digite uma palavra e desafie seus amigos!</p>
+        <h3 id="titleMode"></h3>
+        <p id="headMessage">Desafie seus amigos!</p>
     </header>
 
     <main>
@@ -36,9 +37,11 @@
             <div id="letrasChutadas"></div>
             <p id="tentativasRestantes"></p>
             <div id="mensagem"></div>
-            <button id="resetBtnRandom" class="reset" onclick="modoAleatorio()">Reiniciar</button>
-            <button id="resetBtnNormal" class="reset" onclick="modoNormal()">Reiniciar</button>
-            <button onClick="window.location.reload();" id="menuBtn">Voltar</button>
+            <div class="resetBtnContainer">
+                <button id="resetBtnRandom" class="reset" onclick="modoAleatorio()">Reiniciar</button>
+                <button id="resetBtnNormal" class="reset" onclick="modoNormal()">Reiniciar</button>
+                <button onClick="window.location.reload();" id="menuBtn">Voltar</button>
+            </div>
         </section>
     </main>
 
