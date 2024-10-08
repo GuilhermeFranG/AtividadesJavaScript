@@ -1,5 +1,5 @@
-const listaPalavras = ['css', 'oi'];
-// 'javascript', 'html', 'css', 'front', 'evoluir', 'tags', 'atributo', 'fullstack', 'landingpage'
+const listaPalavras = ['javascript', 'html', 'css', 'front', 'evoluir', 'tags', 'atributo', 'fullstack', 'landingpage'];
+
 let palavraEscolhida;
 let dicaPalavra;
 let exibicaoPalavra;
@@ -32,7 +32,7 @@ function modoAleatorio() {
 
     // Mensagem da header //
     document.getElementById('titleMode').innerText = `Modo Aleátorio`;
-    document.getElementById('headMessage').innerText = `Se desafie a descobri a palavra oculta!`;
+    document.getElementById('headMessage').innerText = `Se desafie a descobrir a palavra oculta!`;
 
     atualizarExibicao();
 }
@@ -47,7 +47,7 @@ function modoNormal() {
     palavraEscolhida = prompt("Escolha uma palavra:");
     console.log(palavraEscolhida);
 
-    // Dica da paalavra //
+    // Dica da palavra //
     dicaPalavra = prompt("Dica da palavra:");
     document.getElementById('hint').innerText = `Dica: ${dicaPalavra.toUpperCase()}`;
     if (dicaPalavra === "") {
@@ -101,6 +101,9 @@ function atualizarExibicao() {
             terminarJogoNormal(`<p class="winner">🎊🎉🎊🎉🎊🎉 <br>
         Parabéns! Você acertou! <br>
         🎊🎉🎊🎉🎊🎉</p>`);
+            // Audio de palmas para a palavra acertada //
+            var clapAudio = document.getElementById('audioPlayer');
+            clapAudio.play();
         }
     } else {
         if (tentativasRestantes === 0) {
@@ -110,6 +113,9 @@ function atualizarExibicao() {
             terminarJogoAleatorio(`<p class="winner">🎊🎉🎊🎉🎊🎉 <br>
         Parabéns! Você acertou! <br>
         🎊🎉🎊🎉🎊🎉</p>`);
+            // Audio de palmas para a palavra acertada //
+            var clapAudio = document.getElementById('audioPlayer');
+            clapAudio.play();
         }
     }
 }
