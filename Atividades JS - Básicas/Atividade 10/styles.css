@@ -48,6 +48,8 @@ button {
 }
 button:active {opacity: .7;}
 
+.tipoTemp {padding: 5px;}
+
 #tipoTemp1 {margin-right: 7vw;}
 
 .temp {
