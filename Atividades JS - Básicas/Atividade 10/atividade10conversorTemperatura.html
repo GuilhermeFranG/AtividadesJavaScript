@@ -22,15 +22,15 @@
         <form name="converter" action="#" method="get">
             <h3>Insira a temperatura:</h3>
             <div>
-                <input type="number" class="temp" id="temp1" name="temp1" required oninput="calcularTemp()" />
-                <select name="tipoTemp1" class="tipoTemp" id="tipoTemp1">
+                <input type="number" class="temp" id="temp1" name="temp1" required onkeyup="calcularTemp()" />
+                <select name="tipoTemp1" class="tipoTemp" id="tipoTemp1" onclick="calcularTemp()">
                     <option value="Celsius" selected>Celsius (°C)</option>
                     <option value="Fahrenheit">Fahrenheit (°F)</option>
                     <option value="Kelvin">Kelvin (K)</option>
                 </select>
 
                 <input type="number" class="temp" id="temp2" name="temp2" required disabled />
-                <select name="tipoTemp2" class="tipoTemp" id="tipoTemp2">
+                <select name="tipoTemp2" class="tipoTemp" id="tipoTemp2" onclick="calcularTemp()">
                     <option value="Celsius">Celsius (°C)</option>
                     <option value="Fahrenheit" selected>Fahrenheit (°F)</option>
                     <option value="Kelvin">Kelvin (K)</option>
